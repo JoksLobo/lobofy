@@ -76,6 +76,7 @@ header {
         border-radius: 50%;
         background-color: rgb(39, 39, 39);
         transition: all 0.5s ease;
+        cursor: pointer;
 
         & i {
           color: white;
@@ -130,6 +131,38 @@ header {
               color: aliceblue;
             }
           }
+        }
+      }
+    }
+
+    & .user-infos {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      & i {
+        font-size: 1.4rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+          color: white;
+        }
+      }
+
+      & .user-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: rgb(39, 39, 39);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+          background-color: rgb(51, 51, 51);
         }
       }
     }
