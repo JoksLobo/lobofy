@@ -212,5 +212,30 @@ header {
         }
       }
     }
+
+    & .playlists-lateral {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      & .playlist-lateral {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 6rem;
+        max-height: 6rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(63, 63, 63);
+        }
+
+        & img {
+          border-radius: 0.5rem;
+        }
+      }
+    }
   }
 }
