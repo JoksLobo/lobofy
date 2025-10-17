@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: rgb(238, 236, 236);
+  background-color: rgb(12, 12, 12);
+}
+
+header {
+  width: 100vw;
+
+  & .container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    & i {
+      font-size: 2rem;
+      color: rgb(211, 208, 208);
+    }
+
+    & .icons {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      transition: all 1s ease;
+
+      & .dots {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      & .seta-esquerda {
+        opacity: 0.5;
+      }
+
+      & .seta-direita {
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover {
+          color: rgb(255, 255, 255);
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    & .home-search {
+      display: flex;
+    }
+  }
+}
