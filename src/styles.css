@@ -185,6 +185,7 @@ header {
     background-color: rgb(27, 27, 27);
     padding: 1rem;
     border-radius: 1rem;
+    overflow: hidden;
 
     & .library {
       display: flex;
@@ -192,7 +193,6 @@ header {
       align-items: center;
       gap: 2rem;
       padding-top: 1.5rem;
-      overflow: hidden;
 
       & .barras {
         font-size: 2rem;
@@ -260,6 +260,7 @@ header {
         display: grid;
         gap: 1.5rem;
 
+        /* seletor de playlists recentes */
         & .opcoes-recentes {
           display: flex;
           gap: 1rem;
@@ -288,6 +289,8 @@ header {
             }
           }
         }
+
+        /* seletor de músicas, podcasts ou tudo tocadas recentemente */
       }
     }
   }
