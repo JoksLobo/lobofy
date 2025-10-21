@@ -177,6 +177,7 @@ header {
 
   & .menu-lateral {
     max-width: 8rem;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,6 +192,7 @@ header {
       align-items: center;
       gap: 2rem;
       padding-top: 1.5rem;
+      overflow: hidden;
 
       & .barras {
         font-size: 2rem;
@@ -236,6 +238,55 @@ header {
 
         & img {
           border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+
+  & .menu-central {
+    width: 70vw;
+    height: 80vh;
+    border-radius: 1rem;
+    background-color: rgb(27, 27, 27);
+
+    & .container-menu {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem 4rem;
+      /* box-shadow: inset 0px 10rem 8rem 5rem rgb(192, 110, 51); */
+
+      /* tocados recentemente */
+      & .recentes {
+        display: grid;
+        gap: 1.5rem;
+
+        & .opcoes-recentes {
+          display: flex;
+          gap: 1rem;
+
+          & .opcao-tudo,
+          .opcao-musica,
+          .opcao-podcasts {
+            font-size: 1.4rem;
+            font-weight: 700;
+            padding: 0.8rem;
+            border-radius: 2rem;
+            background-color: rgba(148, 147, 147, 0.199);
+            cursor: pointer;
+
+            &:hover {
+              background-color: rgba(148, 147, 147, 0.315);
+            }
+
+            &.active {
+              background-color: white;
+              color: rgb(19, 19, 19);
+
+              &:hover {
+                background-color: rgb(219, 214, 214);
+              }
+            }
+          }
         }
       }
     }
