@@ -253,7 +253,6 @@ header {
       display: flex;
       flex-direction: column;
       padding: 1.5rem 4rem;
-      /* box-shadow: inset 0px 10rem 8rem 5rem rgb(192, 110, 51); */
 
       /* tocados recentemente */
       & .recentes {
@@ -290,7 +289,56 @@ header {
           }
         }
 
-        /* seletor de músicas, podcasts ou tudo tocadas recentemente */
+        /* playlists recentes */
+        & .playlists-recentes {
+          & .playlist-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 1.4rem;
+            height: 5rem;
+            width: 26rem;
+            border-radius: 0.5rem;
+            background-color: rgba(148, 147, 147, 0.116);
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: rgba(148, 147, 147, 0.226);
+              .botao-play {
+                display: flex;
+              }
+            }
+
+            & .foto-nome-card {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+            }
+
+            & .botao-play {
+              display: none;
+              align-items: center;
+              justify-content: center;
+              padding: 1rem;
+              background-color: #1ed760;
+              height: 3.5rem;
+              width: 3.5rem;
+              border-radius: 50%;
+              color: black;
+              font-size: 1.8rem;
+              margin-right: 1rem;
+              cursor: pointer;
+              box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.322);
+
+              &:hover {
+                transform: scale(1.05);
+              }
+            }
+          }
+        }
       }
     }
   }
