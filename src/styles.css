@@ -172,6 +172,8 @@ header {
 .container-main {
   padding: 1rem;
   width: 100vw;
+  display: flex;
+  gap: 1rem;
 
   & .menu-lateral {
     max-width: 8rem;
