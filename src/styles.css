@@ -291,6 +291,10 @@ header {
 
         /* playlists recentes */
         & .playlists-recentes {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1rem;
+
           & .playlist-card {
             display: flex;
             align-items: center;
@@ -298,7 +302,7 @@ header {
             font-weight: 700;
             font-size: 1.4rem;
             height: 5rem;
-            width: 26rem;
+            width: 26.5rem;
             border-radius: 0.5rem;
             background-color: rgba(148, 147, 147, 0.116);
             overflow: hidden;
