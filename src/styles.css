@@ -253,6 +253,7 @@ header {
       display: flex;
       flex-direction: column;
       padding: 1.5rem 4rem;
+      gap: 2rem;
 
       /* tocados recentemente */
       & .recentes {
@@ -294,6 +295,7 @@ header {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           gap: 1rem;
+          margin-bottom: 3rem;
 
           & .playlist-card {
             display: flex;
@@ -347,6 +349,11 @@ header {
             }
           }
         }
+      }
+
+      & .recomendados {
+        display: grid;
+        gap: 1.5rem;
       }
     }
   }
