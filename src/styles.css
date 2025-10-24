@@ -354,6 +354,85 @@ header {
       & .recomendados {
         display: grid;
         gap: 1.5rem;
+        max-height: 30rem;
+        overflow: hidden;
+
+        padding: 1rem;
+
+        & .playlists-container {
+          display: flex;
+          gap: 0.5rem;
+          height: 80%;
+
+          & .playlist-central-card {
+            min-width: 20rem;
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            align-items: start;
+            padding: 1rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: #2e2e2e5d;
+
+              & .botao-play-central {
+                opacity: 1;
+                transform: translateY(9rem);
+              }
+            }
+
+            & .card-title {
+              font-size: 1.5rem;
+              font-weight: 700;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            & .playlist-central-img {
+              align-self: center;
+              & img {
+                height: 17rem;
+                width: 18rem;
+                object-fit: cover;
+                border-radius: 1rem;
+              }
+            }
+          }
+        }
+      }
+
+      & .botao-play-central {
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color: #1ed760;
+        height: 5.5rem;
+        width: 5.5rem;
+        border-radius: 50%;
+        color: black;
+        font-size: 1.8rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.322);
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        transform: translatey(10rem);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+          background-color: #34eb74;
+        }
       }
     }
   }
