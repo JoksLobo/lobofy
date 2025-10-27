@@ -354,11 +354,50 @@ header {
       }
 
       & .recomendados {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 1.5rem;
         max-height: 30rem;
-
+        position: relative;
         padding: 1rem;
+
+        &:hover {
+          & .prev,
+          & .next {
+            opacity: 1;
+          }
+        }
+
+        & .prev,
+        & .next {
+          opacity: 0;
+          position: absolute;
+          height: 3rem;
+          width: 3rem;
+          background-color: rgb(73, 73, 73);
+          border-radius: 50%;
+          border: none;
+          font-size: 1.9rem;
+          color: white;
+          cursor: pointer;
+          z-index: 99;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: rgb(104, 103, 103);
+          }
+        }
+
+        & .prev {
+          left: 0;
+          bottom: 50%;
+          transform: translateX(-50%) translateY(50%);
+        }
+        & .next {
+          right: 0;
+          bottom: 50%;
+          transform: translateX(50%) translateY(50%);
+        }
 
         & .playlists-container {
           display: flex;
