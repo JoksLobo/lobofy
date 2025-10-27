@@ -248,6 +248,7 @@ header {
     width: 70vw;
     height: 80vh;
     overflow: hidden;
+    overflow-y: auto;
     border-radius: 1rem;
     background-color: rgb(27, 27, 27);
 
