@@ -247,6 +247,7 @@ header {
   & .menu-central {
     width: 70vw;
     height: 80vh;
+    overflow: hidden;
     border-radius: 1rem;
     background-color: rgb(27, 27, 27);
 
@@ -254,7 +255,7 @@ header {
       display: flex;
       flex-direction: column;
       padding: 1.5rem 4rem;
-      gap: 2rem;
+      gap: 1rem;
 
       /* tocados recentemente */
       & .recentes {
@@ -356,7 +357,6 @@ header {
         display: grid;
         gap: 1.5rem;
         max-height: 30rem;
-        overflow: hidden;
 
         padding: 1rem;
 
@@ -364,6 +364,7 @@ header {
           display: flex;
           gap: 0.5rem;
           height: 80%;
+          transition: transform 0.3s ease;
 
           & .playlist-central-card {
             min-width: 20rem;
